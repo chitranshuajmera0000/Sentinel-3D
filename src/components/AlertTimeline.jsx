@@ -20,7 +20,7 @@ export function AlertTimeline({ log, currentResult }) {
   };
 
   return (
-    <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex-1 flex flex-col mb-0">
+    <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex-1 flex flex-col min-h-[250px] mb-0">
       <div className="flex items-center gap-2 mb-2">
         <h2 className="text-slate-200 font-semibold text-lg">Live Detection Timeline</h2>
         {isAlert && <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse" />}

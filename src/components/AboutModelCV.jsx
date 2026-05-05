@@ -256,8 +256,8 @@ export function AboutModelCV() {
             {metric:'High Recall (96.7%)',meaning:'Very few missed fights — critical in surveillance where missing an incident has real consequences.', color:'text-orange-400'},
             {metric:'Balanced F1 (96.94%)',meaning:"The model doesn't sacrifice recall for precision or vice versa — it excels at both simultaneously.", color:'text-blue-400'},
           ].map(m=>(
-            <div key={m.metric} className="bg-slate-900/60 p-4 rounded-xl border border-slate-700 flex items-start gap-4">
-              <div className={`text-sm font-bold ${m.color} w-52 flex-shrink-0`}>{m.metric}</div>
+            <div key={m.metric} className="bg-slate-900/60 p-4 rounded-xl border border-slate-700 flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+              <div className={`text-sm font-bold ${m.color} sm:w-52 flex-shrink-0`}>{m.metric}</div>
               <div className="text-slate-400 text-sm">{m.meaning}</div>
             </div>
           ))}

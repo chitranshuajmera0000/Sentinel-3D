@@ -96,7 +96,7 @@ export default function App() {
         </header>
 
         {/* Tab Switcher */}
-        <div className="flex gap-4 border-b border-slate-700 pb-2">
+        <div className="flex flex-wrap gap-4 border-b border-slate-700 pb-2">
           <button 
             onClick={() => setActiveTab('live')}
             className={`font-semibold pb-2 border-b-2 transition-colors ${activeTab === 'live' ? 'text-white border-blue-500' : 'text-slate-400 border-transparent hover:text-slate-200'}`}
@@ -146,11 +146,11 @@ export default function App() {
               {/* BOTTOM ROW */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                 {/* Left - AlertLog */}
-                <div className="lg:col-span-5 xl:col-span-6 flex flex-col h-[500px]">
+                <div className="lg:col-span-5 xl:col-span-6 flex flex-col h-[400px] lg:h-[605px]">
                   <AlertLog log={log} />
                 </div>
                 {/* Right - Past Incidents */}
-                <div className="lg:col-span-7 xl:col-span-6 flex flex-col h-[500px]">
+                <div className="lg:col-span-7 xl:col-span-6 flex flex-col h-[400px] lg:h-[605px]">
                   {stats?.incidents?.length > 0 ? (
                     <div className="bg-slate-800 border border-slate-700 rounded-xl p-4 flex-1 flex flex-col">
                       <div className="flex items-center justify-between mb-4">

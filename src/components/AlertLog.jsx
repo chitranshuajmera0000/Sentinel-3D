@@ -38,7 +38,7 @@ export function AlertLog({ log }) {
   const displayLog = log.slice(0, 50);
 
   return (
-    <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex flex-col h-[605px]">
+    <div className="bg-slate-800 p-4 rounded-xl border border-slate-700 flex flex-col h-[400px] lg:h-[605px]">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-slate-200 font-semibold text-lg">Alert Log</h2>
         <button
